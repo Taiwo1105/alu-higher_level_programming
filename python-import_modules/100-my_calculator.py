@@ -4,11 +4,11 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     argc = len(argv)
     if argc != 4:
-        print('usage: {} <a> <operator> <b>'.format(argv[0]))
+        print('Usage: {} <a> <operator> <b>'.format(argv[0]))
         exit(1)
     ops = {
          '+': add,
-         '-': sub,
+         '_': sub,
          '*': mul,
          '/': div
     }

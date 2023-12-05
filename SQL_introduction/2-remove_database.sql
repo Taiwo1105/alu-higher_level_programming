@@ -1,2 +1,3 @@
--- Lists all tables of a database in my MySQL_database
-SHOW tables;
+-- Deletes a database named 'hbtn_0c_0'
+
+DROP DATABASE IF EXISTS hbtn_0c_0;

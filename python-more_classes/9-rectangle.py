@@ -10,9 +10,9 @@ class Rectangle:
     methods area, perimeter, print, str, repr, and del, and
     class attribute number_of_instances that keeps track of # of instances,
     class attribute print_symbol which is used as symbol for printing,
-    and static method bigger_or_equal that returns biggest rectangle.
+    static method bigger_or_equal that returns biggest rectangle,
+    and class method square that returns a new Rectangle.
     """
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -55,6 +55,10 @@ class Rectangle:
             return rect_1
         else:
             return rect_2
+
+    @classmethod
+    def square(cls, size=0):
+        return Rectangle(size, size)
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)

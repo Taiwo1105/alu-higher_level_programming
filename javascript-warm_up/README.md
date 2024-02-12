@@ -1,1 +1,1 @@
-Javascripttt
+JavaScript is amazing
